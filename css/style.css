@@ -11,6 +11,12 @@
     font-size: 16px;
     background-color: #dde1e2; 
     width: 100%;
+
+    overscroll-behavior-y: container; /* Andriod. para no aparezca pull to refresh al jalar la página */
+    user-select: none; /*no permite hacer selecciones*/
+    -webkit-tap-highlight-color: transparent ; /*para IOS */
+    -webkit-touch-callout: none;
+    
 }
 
 /* Personalizados */
