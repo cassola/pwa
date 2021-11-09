@@ -3,7 +3,7 @@ var swLocation = '/pwa/sw.js';
 
 
 if (navigator.serviceWorker){
-    if(url.includes('127.0.0.1')){
+    if(url.includes('127.0.0.1') || url.includes('localhost')){
         swLocation = '/sw.js'
     }
     navigator.serviceWorker.register(swLocation);
